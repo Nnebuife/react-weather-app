@@ -8,7 +8,6 @@ export default function App() {
       <div className="container">
      <h1>  Weather App </h1>
 <Weather />
-<button class = "btn btn-success"> Welcome </button>
 <footer>
       <p> This project is done by Buife and is an {" "}  
         <a href="https://github.com/Nnebuife/react-weather-app" target="_blank" rel="noopener noreferrer"> 
