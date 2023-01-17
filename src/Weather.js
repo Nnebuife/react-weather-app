@@ -1,8 +1,8 @@
 import React from "react";
-
+import './weather.css';
 
 export default function Weather() {
-    return <div class="Weather border">
+    return <div class="weather">
    <form>
   <div class="row mb-3 mt-3">
   <div class="col">
@@ -15,25 +15,34 @@ export default function Weather() {
   </div>
   </div>
 </form>
+<div class="tempDetails">
     <div class="container"> 
     <div class = "row">
-        <div class="col-1"> 
+        <div class="col-6">
+            <div class="row">
+        <div class="col-2"> 
         <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="clear sky with some clouds" /> 
         </div>
-        <div class="col-1">28</div>
-        <div class="col-3">
-            <ul>
-                <li>Precipitations: </li>
-                <li>Humidity: </li>
-                <li>Wind: </li>
-            </ul>
+        <div class="col-4 temperature">
+            
+        28
+        <span class="tempCelsius">°C|</span>
+        <span class="tempFahr">°F</span>
         </div>
-        <div class="col-7">
-            <div class="col">Abuja</div>
-            <div class="col">Sunday 7pm</div>
-            <div class="col">Clear sky with some clouds</div>
+        <div class="col-2 tempData">
+                <div>Precipitations: </div>
+                <div>Humidity: </div>
+                <div>Wind: </div>
+         </div>
+        </div>
+        </div>
+        <div class="col-6 cityDetails">
+            <div class="cityName">Abuja</div>
+            <div class="tempDay">Sunday 7pm</div>
+            <div class="tempDesc">Clear sky with some clouds</div>
             </div>
 
+    </div>
     </div>
     </div>
             </div>

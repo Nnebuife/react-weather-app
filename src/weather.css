@@ -1,0 +1,39 @@
+.weather{border: 1px solid rgb(235, 222, 222); 
+margin: 10px auto;
+padding: 5px;}
+
+.tempDetails img{display: inline;
+    height: 50px;
+    vertical-align: top;
+    width: 45px;}
+
+.temperature {font-size: 25px;
+padding: 10px;
+display: inline-block;
+vertical-align: top;}
+
+.tempCelsius, .tempFahr{font-size: 12px;
+    line-height: 20px;
+    margin-top: 6px;
+    vertical-align: top;}
+
+.tempData{font-size: 12px;
+    color: #70757a;
+    display: inline-block;
+    line-height: 16px;
+    padding-left: 9px;
+    padding-top: 6px;
+}
+
+.cityDetails{text-align: right;}
+.cityName{color: #202124;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Google Sans,arial,sans-serif;
+    font-weight: 400;
+    display: block;}
+
+.tempDay, .tempDesc{color: #70757a;
+    font-size: 14px;
+    line-height: 20px;}
+
