@@ -8,13 +8,13 @@ const[weatherData, setWeatherData] = useState({ready:false});
 
 function handleResponse(response) {setWeatherData({
     ready: true,
-    temperature: response.data.main.temp,
-    humidity: response.data.main.humidity,
+    temperature: response.data.temperature.current,
+    humidity: response.data.temperature.humidity,
     date:"Wednesday 10:50",
-    description: response.data.weather[0].description,
+    description: response.data.condition.description,
     iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png",
     wind: response.data.wind.speed,
-    city: response.data.name
+    city: response.data.city
 }); }
 
 if(weatherData.ready) {return(<div class="weather">
@@ -63,8 +63,8 @@ if(weatherData.ready) {return(<div class="weather">
          </div>)}
          
         else{
-            const apiKey="302c93e3e9e39b90c8c02a8d733c82ec";
-            let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+            const apiKey="ecb0ea7d412o3et544cd5d779cf7f863";
+            let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
             axios.get(apiUrl).then(handleResponse);
 
             return "Loading...";
