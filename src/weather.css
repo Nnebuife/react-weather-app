@@ -19,7 +19,7 @@ vertical-align: top;}
 
 .tempData{font-size: 12px;
     color: #70757a;
-    
+    display: inline-block;
     line-height: 16px;
     padding-left: 9px;
     padding-top: 6px;
